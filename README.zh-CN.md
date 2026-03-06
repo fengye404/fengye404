@@ -73,6 +73,11 @@
 - 通过可运行示例持续公开学习 LLM 训练流程
 - 保持项目小步快跑、文档清晰、可长期维护
 
+## 说明
+
+- 本 Profile 的部分内容由 AI 自动生成。
+- 数据由 GitHub Actions 通过 [`sync-profile.yml`](./.github/workflows/sync-profile.yml) 自动同步。
+
 ---
 
 如果你也在做后端系统或 AI 开发工具，欢迎交流。
