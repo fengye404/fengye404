@@ -1,4 +1,7 @@
 <h1 align="center">Hi, I'm FengYe</h1>
+
+<p align="center">English | <a href="./README.zh-CN.md">简体中文</a></p>
+
 <p align="center">
   <a href="https://github.com/fengye404">
     <img src="https://komarev.com/ghpvc/?username=fengye404&label=Profile%20views&color=0e75b6&style=flat" alt="profile views" />
@@ -9,7 +12,7 @@
 </p>
 
 <p align="center">
-  Java & Backend Developer at Alibaba · Based in Hangzhou, China
+  Java & Backend Developer at Alibaba · Hangzhou, China
 </p>
 
 <p align="center">
@@ -18,47 +21,44 @@
   <a href="mailto:1129126684@qq.com">Email</a>
 </p>
 
-## About
+## Snapshot
 
-- Name: `FengYe` (`fengye404`)
-- Role: `Java & Backend developer` at `Alibaba`
-- Focus: backend engineering, distributed systems, and AI engineering demos
-- Current interests: `Spring AI`, `MCP`, `LLM training workflows`
+- `@Alibaba` Java / Backend engineer
+- Focus on distributed systems and AI application engineering
+- Recent direction: agent tooling, MCP/Spring AI demos, LLM training practice
+- Public repos: `23` (data synced on `2026-03-07`)
 
-## Featured Projects
+## Active Projects (2025-2026)
 
-| Project | What it does | Stack | Link |
+| Project | What it is | Stack | Last push |
 | --- | --- | --- | --- |
-| Raft-KV-Java | Raft-based key/value database using Vert.x | Java, Vert.x, Raft | [Repo](https://github.com/fengye404/Raft-KV-Java) |
-| ai-desktop-assistant | Desktop AI assistant playground | TypeScript | [Repo](https://github.com/fengye404/ai-desktop-assistant) |
-| llm-training-learning | LLM training notes and experiments | Python | [Repo](https://github.com/fengye404/llm-training-learning) |
-| spring-ai-demo | AI application demo based on Spring AI | Java, Spring AI | [Repo](https://github.com/fengye404/spring-ai-demo) |
+| [muse-work](https://github.com/fengye404/muse-work) | Desktop AI workspace powered by Claude Agent SDK | Electron, React, TypeScript | 2026-03 |
+| [llm-training-learning](https://github.com/fengye404/llm-training-learning) | End-to-end LLM training learning workspace (SFT / DPO / GRPO / RLHF) | Python, Jupyter | 2026-03 |
+| [ADK-demo](https://github.com/fengye404/ADK-demo) | Java ADK experiment with simple agent runner | Java | 2025-12 |
+| [spring-ai-demo](https://github.com/fengye404/spring-ai-demo) | Spring AI demo with chat flow and tool integration | Java, Spring AI | 2025-07 |
+| [ts-ai-sdk-demo](https://github.com/fengye404/ts-ai-sdk-demo) | Minimal AI SDK usage demo in TypeScript | TypeScript | 2025-07 |
+| [mcp-demo](https://github.com/fengye404/mcp-demo) | Java MCP client/server demo (includes weather tool example) | Java | 2025-03 |
 
-## Open Source Contributions
+## Representative Repos
 
-| Project | Contribution context | Link |
+| Project | Highlights | Link |
 | --- | --- | --- |
-| arthas | Pinned contribution project from Alibaba ecosystem | [Repo](https://github.com/alibaba/arthas) |
-| backend_qingyou | Backend onboarding material for beginners | [Repo](https://github.com/dreamlike-ocean/backend_qingyou) |
+| Raft-KV-Java | Raft-based key/value database, async networking with Vert.x (`18★`) | [Repo](https://github.com/fengye404/Raft-KV-Java) |
+| freshcup | Early backend project (`4★`, `2 forks`) | [Repo](https://github.com/fengye404/freshcup) |
+| SAST.2021-backendWoc | Backend workshop project (`1★`, `4 forks`) | [Repo](https://github.com/fengye404/SAST.2021-backendWoc) |
 
 ## Tech I Use
 
 <p>
   <img src="https://img.shields.io/badge/Java-007396?style=flat&logo=openjdk&logoColor=white" alt="Java" />
   <img src="https://img.shields.io/badge/Spring-6DB33F?style=flat&logo=spring&logoColor=white" alt="Spring" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" alt="Python" />
   <img src="https://img.shields.io/badge/PostgreSQL-316192?style=flat&logo=postgresql&logoColor=white" alt="PostgreSQL" />
   <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white" alt="MySQL" />
   <img src="https://img.shields.io/badge/Redis-DC382D?style=flat&logo=redis&logoColor=white" alt="Redis" />
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" alt="Python" />
   <img src="https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white" alt="Docker" />
 </p>
-
-## Recent Work
-
-- Building AI-related demos: `ai-desktop-assistant`, `spring-ai-demo`, `ts-ai-sdk-demo`
-- Exploring model training workflows in `llm-training-learning`
-- Maintaining and iterating backend projects and blog content
 
 ## GitHub Stats
 
@@ -67,12 +67,12 @@
   <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=fengye404&layout=compact&hide_border=true" alt="top langs" />
 </p>
 
-## What I Value
+## Current Focus
 
-- Practical engineering over hype
-- Clear documentation and maintainable code
-- Learning in public through small, shippable experiments
+- Build practical AI developer tools (desktop + backend)
+- Learn LLM training workflows in public with runnable examples
+- Keep projects concise, documented, and production-minded
 
 ---
 
-If you are building backend systems or AI developer tools, feel free to connect.
+If you're working on backend systems or AI developer tooling, feel free to connect.
