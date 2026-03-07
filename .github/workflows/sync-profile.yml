@@ -23,6 +23,7 @@ jobs:
       - name: Sync profile README
         env:
           GITHUB_USERNAME: ${{ github.repository_owner }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python3 scripts/sync_profile_readme.py
 
       - name: Detect changes

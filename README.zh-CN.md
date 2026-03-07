@@ -60,12 +60,15 @@
   <img src="https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white" alt="Docker" />
 </p>
 
-## GitHub 统计
+## GitHub 概览
 
-<p>
-  <img height="160" src="https://github-readme-stats.vercel.app/api?username=fengye404&show_icons=true&hide_border=true" alt="github stats" />
-  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=fengye404&layout=compact&hide_border=true" alt="top langs" />
-</p>
+| 指标 | 数值 |
+| --- | --- |
+| 公开仓库数 | `23` |
+| Followers / Following | `12` / `7` |
+| 自有仓库总 Stars | `24` |
+| 自有仓库总 Forks | `6` |
+| 主要语言 | `Java, TypeScript, JavaScript, Python, HTML` |
 
 ## 当前关注
 

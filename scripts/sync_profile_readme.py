@@ -10,6 +10,7 @@ from typing import Dict, List
 from zoneinfo import ZoneInfo
 
 USERNAME = os.getenv("GITHUB_USERNAME", "fengye404")
+GITHUB_TOKEN = os.getenv("GITHUB_TOKEN", "").strip()
 PROFILE_EMAIL = os.getenv("PROFILE_EMAIL", "1129126684@qq.com")
 PROFILE_LOCATION = os.getenv("PROFILE_LOCATION", "Hangzhou, China")
 PROFILE_COMPANY = os.getenv("PROFILE_COMPANY", "Alibaba")
@@ -80,12 +81,15 @@ PROJECT_META = {
 
 def gh_get(path: str):
     url = f"https://api.github.com{path}"
+    headers = {
+        "Accept": "application/vnd.github+json",
+        "User-Agent": "profile-readme-sync",
+    }
+    if GITHUB_TOKEN:
+        headers["Authorization"] = f"Bearer {GITHUB_TOKEN}"
     req = urllib.request.Request(
         url,
-        headers={
-            "Accept": "application/vnd.github+json",
-            "User-Agent": "profile-readme-sync",
-        },
+        headers=headers,
     )
     with urllib.request.urlopen(req, timeout=30) as resp:
         return json.load(resp)
@@ -188,6 +192,30 @@ def active_year_range(active_repos: List[Dict]) -> str:
     return f"{years[0]}-{years[-1]}"
 
 
+def compute_profile_stats(user: Dict, non_fork_repos: List[Dict]) -> Dict:
+    total_stars = sum((repo.get("stargazers_count") or 0) for repo in non_fork_repos)
+    total_forks = sum((repo.get("forks_count") or 0) for repo in non_fork_repos)
+
+    lang_counts: Dict[str, int] = {}
+    for repo in non_fork_repos:
+        lang = repo.get("language")
+        if not lang:
+            continue
+        lang_counts[lang] = lang_counts.get(lang, 0) + 1
+
+    top_langs = sorted(lang_counts.items(), key=lambda item: (item[1], item[0]), reverse=True)[:5]
+    top_langs_text = ", ".join(name for name, _ in top_langs) if top_langs else "-"
+
+    return {
+        "public_repos": user.get("public_repos", 0),
+        "followers": user.get("followers", 0),
+        "following": user.get("following", 0),
+        "total_stars": total_stars,
+        "total_forks": total_forks,
+        "top_langs": top_langs_text,
+    }
+
+
 def active_table_en(active_repos: List[Dict]) -> str:
     lines = [
         "| Project | What it is | Stack | Last push |",
@@ -276,7 +304,35 @@ def rep_table_zh(repos: List[Dict]) -> str:
     return "\n".join(lines)
 
 
-def build_readme_en(user: Dict, active: List[Dict], reps: List[Dict]) -> str:
+def stats_table_en(stats: Dict) -> str:
+    return "\n".join(
+        [
+            "| Metric | Value |",
+            "| --- | --- |",
+            f"| Public repos | `{stats['public_repos']}` |",
+            f"| Followers / Following | `{stats['followers']}` / `{stats['following']}` |",
+            f"| Total stars (owned repos) | `{stats['total_stars']}` |",
+            f"| Total forks (owned repos) | `{stats['total_forks']}` |",
+            f"| Top languages | `{stats['top_langs']}` |",
+        ]
+    )
+
+
+def stats_table_zh(stats: Dict) -> str:
+    return "\n".join(
+        [
+            "| 指标 | 数值 |",
+            "| --- | --- |",
+            f"| 公开仓库数 | `{stats['public_repos']}` |",
+            f"| Followers / Following | `{stats['followers']}` / `{stats['following']}` |",
+            f"| 自有仓库总 Stars | `{stats['total_stars']}` |",
+            f"| 自有仓库总 Forks | `{stats['total_forks']}` |",
+            f"| 主要语言 | `{stats['top_langs']}` |",
+        ]
+    )
+
+
+def build_readme_en(user: Dict, active: List[Dict], reps: List[Dict], stats: Dict) -> str:
     date_str = sync_date()
     year_range = active_year_range(active)
     public_repos = user.get("public_repos", "-")
@@ -334,12 +390,9 @@ def build_readme_en(user: Dict, active: List[Dict], reps: List[Dict]) -> str:
   <img src=\"https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white\" alt=\"Docker\" />
 </p>
 
-## GitHub Stats
+## GitHub Snapshot
 
-<p>
-  <img height=\"160\" src=\"https://github-readme-stats.vercel.app/api?username={USERNAME}&show_icons=true&hide_border=true\" alt=\"github stats\" />
-  <img height=\"160\" src=\"https://github-readme-stats.vercel.app/api/top-langs/?username={USERNAME}&layout=compact&hide_border=true\" alt=\"top langs\" />
-</p>
+{stats_table_en(stats)}
 
 ## Current Focus
 
@@ -358,7 +411,7 @@ If you're working on backend systems or AI developer tooling, feel free to conne
 """
 
 
-def build_readme_zh(user: Dict, active: List[Dict], reps: List[Dict]) -> str:
+def build_readme_zh(user: Dict, active: List[Dict], reps: List[Dict], stats: Dict) -> str:
     date_str = sync_date()
     year_range = active_year_range(active)
     public_repos = user.get("public_repos", "-")
@@ -416,12 +469,9 @@ def build_readme_zh(user: Dict, active: List[Dict], reps: List[Dict]) -> str:
   <img src=\"https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white\" alt=\"Docker\" />
 </p>
 
-## GitHub 统计
+## GitHub 概览
 
-<p>
-  <img height=\"160\" src=\"https://github-readme-stats.vercel.app/api?username={USERNAME}&show_icons=true&hide_border=true\" alt=\"github stats\" />
-  <img height=\"160\" src=\"https://github-readme-stats.vercel.app/api/top-langs/?username={USERNAME}&layout=compact&hide_border=true\" alt=\"top langs\" />
-</p>
+{stats_table_zh(stats)}
 
 ## 当前关注
 
@@ -447,9 +497,10 @@ def main() -> None:
     non_fork_repos = [repo for repo in repos if not repo.get("fork")]
     active = select_active_repos(non_fork_repos)
     reps = select_representative_repos(non_fork_repos)
+    stats = compute_profile_stats(user, non_fork_repos)
 
-    readme_en = build_readme_en(user, active, reps)
-    readme_zh = build_readme_zh(user, active, reps)
+    readme_en = build_readme_en(user, active, reps, stats)
+    readme_zh = build_readme_zh(user, active, reps, stats)
 
     with open("README.md", "w", encoding="utf-8") as f:
         f.write(readme_en)

@@ -60,12 +60,15 @@
   <img src="https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white" alt="Docker" />
 </p>
 
-## GitHub Stats
+## GitHub Snapshot
 
-<p>
-  <img height="160" src="https://github-readme-stats.vercel.app/api?username=fengye404&show_icons=true&hide_border=true" alt="github stats" />
-  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=fengye404&layout=compact&hide_border=true" alt="top langs" />
-</p>
+| Metric | Value |
+| --- | --- |
+| Public repos | `23` |
+| Followers / Following | `12` / `7` |
+| Total stars (owned repos) | `24` |
+| Total forks (owned repos) | `6` |
+| Top languages | `Java, TypeScript, JavaScript, Python, HTML` |
 
 ## Current Focus
 
