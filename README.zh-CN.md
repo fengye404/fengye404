@@ -47,6 +47,12 @@
 | freshcup | 早期后端实践项目（`4★`, `2 forks`） | [仓库](https://github.com/fengye404/freshcup) |
 | SAST.2021-backendWoc | 后端训练营项目（`1★`, `4 forks`） | [仓库](https://github.com/fengye404/SAST.2021-backendWoc) |
 
+## 开源贡献
+
+| 项目 | 贡献说明 | 链接 |
+| --- | --- | --- |
+| `alibaba/arthas` | 通过 OSPP 参与贡献（低资源消耗 gRPC 实现探索），包含 PR #2914。 | [仓库](https://github.com/alibaba/arthas) · [PR](https://github.com/alibaba/arthas/pull/2914) |
+
 ## 技术栈
 
 <p>

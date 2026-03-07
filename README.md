@@ -47,6 +47,12 @@
 | freshcup | Early backend project (`4★`, `2 forks`) | [Repo](https://github.com/fengye404/freshcup) |
 | SAST.2021-backendWoc | Backend workshop project (`1★`, `4 forks`) | [Repo](https://github.com/fengye404/SAST.2021-backendWoc) |
 
+## Open Source Contributions
+
+| Project | Contribution | Links |
+| --- | --- | --- |
+| `alibaba/arthas` | Contributed via OSPP (low-resource gRPC implementation exploration), including PR #2914. | [Repo](https://github.com/alibaba/arthas) · [PR](https://github.com/alibaba/arthas/pull/2914) |
+
 ## Tech I Use
 
 <p>

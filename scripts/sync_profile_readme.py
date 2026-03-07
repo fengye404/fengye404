@@ -78,6 +78,16 @@ PROJECT_META = {
     },
 }
 
+OPEN_SOURCE_CONTRIBUTIONS = [
+    {
+        "project": "alibaba/arthas",
+        "en_context": "Contributed via OSPP (low-resource gRPC implementation exploration), including PR #2914.",
+        "zh_context": "通过 OSPP 参与贡献（低资源消耗 gRPC 实现探索），包含 PR #2914。",
+        "repo_url": "https://github.com/alibaba/arthas",
+        "pr_url": "https://github.com/alibaba/arthas/pull/2914",
+    }
+]
+
 
 def gh_get(path: str):
     url = f"https://api.github.com{path}"
@@ -304,6 +314,30 @@ def rep_table_zh(repos: List[Dict]) -> str:
     return "\n".join(lines)
 
 
+def oss_table_en() -> str:
+    lines = [
+        "| Project | Contribution | Links |",
+        "| --- | --- | --- |",
+    ]
+    for item in OPEN_SOURCE_CONTRIBUTIONS:
+        lines.append(
+            f"| `{item['project']}` | {item['en_context']} | [Repo]({item['repo_url']}) · [PR]({item['pr_url']}) |"
+        )
+    return "\n".join(lines)
+
+
+def oss_table_zh() -> str:
+    lines = [
+        "| 项目 | 贡献说明 | 链接 |",
+        "| --- | --- | --- |",
+    ]
+    for item in OPEN_SOURCE_CONTRIBUTIONS:
+        lines.append(
+            f"| `{item['project']}` | {item['zh_context']} | [仓库]({item['repo_url']}) · [PR]({item['pr_url']}) |"
+        )
+    return "\n".join(lines)
+
+
 def stats_table_en(stats: Dict) -> str:
     return "\n".join(
         [
@@ -376,6 +410,10 @@ def build_readme_en(user: Dict, active: List[Dict], reps: List[Dict], stats: Dic
 ## Representative Repos
 
 {rep_table_en(reps)}
+
+## Open Source Contributions
+
+{oss_table_en()}
 
 ## Tech I Use
 
@@ -455,6 +493,10 @@ def build_readme_zh(user: Dict, active: List[Dict], reps: List[Dict], stats: Dic
 ## 代表项目
 
 {rep_table_zh(reps)}
+
+## 开源贡献
+
+{oss_table_zh()}
 
 ## 技术栈
 
