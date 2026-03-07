@@ -11,7 +11,7 @@ from zoneinfo import ZoneInfo
 
 USERNAME = os.getenv("GITHUB_USERNAME", "fengye404")
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN", "").strip()
-PROFILE_EMAIL = os.getenv("PROFILE_EMAIL", "1129126684@qq.com")
+PROFILE_EMAIL = os.getenv("PROFILE_EMAIL", "fengye4302@gmail.com")
 PROFILE_LOCATION = os.getenv("PROFILE_LOCATION", "Hangzhou, China")
 PROFILE_COMPANY = os.getenv("PROFILE_COMPANY", "Alibaba")
 PROFILE_NAME = os.getenv("PROFILE_NAME", "FengYe")

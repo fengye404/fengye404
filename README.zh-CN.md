@@ -18,7 +18,7 @@
 <p align="center">
   <a href="https://github.com/fengye404">GitHub</a> ·
   <a href="https://fengye404.github.io">博客</a> ·
-  <a href="mailto:1129126684@qq.com">邮箱</a>
+  <a href="mailto:fengye4302@gmail.com">邮箱</a>
 </p>
 
 ## 个人概览

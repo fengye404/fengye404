@@ -18,7 +18,7 @@
 <p align="center">
   <a href="https://github.com/fengye404">GitHub</a> ·
   <a href="https://fengye404.github.io">Blog</a> ·
-  <a href="mailto:1129126684@qq.com">Email</a>
+  <a href="mailto:fengye4302@gmail.com">Email</a>
 </p>
 
 ## Snapshot
