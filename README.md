@@ -32,12 +32,12 @@
 
 | Project | What it is | Stack | Last push |
 | --- | --- | --- | --- |
-| [muse-work](https://github.com/fengye404/muse-work) | Desktop AI workspace powered by Claude Agent SDK | Electron, React, TypeScript | 2026-03 |
+| [TermPilot](https://github.com/fengye404/TermPilot) | Terminal-first remote control tool with relay, agent, and mobile web access | TypeScript | 2026-03 |
 | [llm-training-learning](https://github.com/fengye404/llm-training-learning) | End-to-end LLM training learning workspace (SFT / DPO / GRPO / RLHF) | Python, Jupyter | 2026-03 |
+| [muse-work](https://github.com/fengye404/muse-work) | Desktop AI workspace powered by Claude Agent SDK | Electron, React, TypeScript | 2026-03 |
 | [ADK-demo](https://github.com/fengye404/ADK-demo) | Java ADK experiment with simple agent runner | Java | 2025-12 |
-| [spring-ai-demo](https://github.com/fengye404/spring-ai-demo) | Spring AI demo with chat flow and tool integration | Java, Spring AI | 2025-07 |
 | [ts-ai-sdk-demo](https://github.com/fengye404/ts-ai-sdk-demo) | Minimal AI SDK usage demo in TypeScript | TypeScript | 2025-07 |
-| [mcp-demo](https://github.com/fengye404/mcp-demo) | Java MCP client/server demo (includes weather tool example) | Java | 2025-03 |
+| [spring-ai-demo](https://github.com/fengye404/spring-ai-demo) | Spring AI demo with chat flow and tool integration | Java, Spring AI | 2025-07 |
 
 ## Representative Repos
 
@@ -72,7 +72,7 @@
 | --- | --- |
 | Public repos | `24` |
 | Followers / Following | `12` / `7` |
-| Total stars (owned repos) | `24` |
+| Total stars (owned repos) | `25` |
 | Total forks (owned repos) | `6` |
 | Top languages | `Java, TypeScript, Python, JavaScript, HTML` |
 

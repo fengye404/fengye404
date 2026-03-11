@@ -32,12 +32,12 @@
 
 | 项目 | 项目说明 | 技术栈 | 最近提交 |
 | --- | --- | --- | --- |
-| [muse-work](https://github.com/fengye404/muse-work) | 基于 Claude Agent SDK 的桌面 AI 工作台 | Electron, React, TypeScript | 2026-03 |
+| [TermPilot](https://github.com/fengye404/TermPilot) | 终端优先的远程控制工具，包含 relay、agent 与移动端 Web 访问 | TypeScript | 2026-03 |
 | [llm-training-learning](https://github.com/fengye404/llm-training-learning) | 覆盖 SFT / DPO / GRPO / RLHF 的端到端 LLM 训练学习仓库 | Python, Jupyter | 2026-03 |
+| [muse-work](https://github.com/fengye404/muse-work) | 基于 Claude Agent SDK 的桌面 AI 工作台 | Electron, React, TypeScript | 2026-03 |
 | [ADK-demo](https://github.com/fengye404/ADK-demo) | Java ADK 实验仓库，包含基础 Agent Runner | Java | 2025-12 |
-| [spring-ai-demo](https://github.com/fengye404/spring-ai-demo) | Spring AI 示例，包含聊天流程与工具调用 | Java, Spring AI | 2025-07 |
 | [ts-ai-sdk-demo](https://github.com/fengye404/ts-ai-sdk-demo) | TypeScript 版最小化 AI SDK 使用示例 | TypeScript | 2025-07 |
-| [mcp-demo](https://github.com/fengye404/mcp-demo) | Java MCP Client/Server 示例（含天气工具调用） | Java | 2025-03 |
+| [spring-ai-demo](https://github.com/fengye404/spring-ai-demo) | Spring AI 示例，包含聊天流程与工具调用 | Java, Spring AI | 2025-07 |
 
 ## 代表项目
 
@@ -72,7 +72,7 @@
 | --- | --- |
 | 公开仓库数 | `24` |
 | Followers / Following | `12` / `7` |
-| 自有仓库总 Stars | `24` |
+| 自有仓库总 Stars | `25` |
 | 自有仓库总 Forks | `6` |
 | 主要语言 | `Java, TypeScript, Python, JavaScript, HTML` |
 

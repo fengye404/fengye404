@@ -16,16 +16,8 @@ PROFILE_LOCATION = os.getenv("PROFILE_LOCATION", "Hangzhou, China")
 PROFILE_COMPANY = os.getenv("PROFILE_COMPANY", "Alibaba")
 PROFILE_NAME = os.getenv("PROFILE_NAME", "FengYe")
 
-ACTIVE_PRIORITY = [
-    "muse-work",
-    "llm-training-learning",
-    "ADK-demo",
-    "spring-ai-demo",
-    "ts-ai-sdk-demo",
-    "mcp-demo",
-]
 ACTIVE_LIMIT = 6
-ACTIVE_EXCLUDE = {f"{USERNAME}", f"{USERNAME}.github.io-back"}
+ACTIVE_EXCLUDE = {f"{USERNAME}", f"{USERNAME}.github.io", f"{USERNAME}.github.io-back"}
 
 REP_PRIORITY = ["Raft-KV-Java", "freshcup", "SAST.2021-backendWoc"]
 REP_LIMIT = 3
@@ -40,6 +32,11 @@ PROJECT_META = {
         "stack": "Python, Jupyter",
         "en_desc": "End-to-end LLM training learning workspace (SFT / DPO / GRPO / RLHF)",
         "zh_desc": "覆盖 SFT / DPO / GRPO / RLHF 的端到端 LLM 训练学习仓库",
+    },
+    "TermPilot": {
+        "stack": "TypeScript",
+        "en_desc": "Terminal-first remote control tool with relay, agent, and mobile web access",
+        "zh_desc": "终端优先的远程控制工具，包含 relay、agent 与移动端 Web 访问",
     },
     "ADK-demo": {
         "stack": "Java",
@@ -145,24 +142,16 @@ def find_repo(repos: List[Dict], name: str) -> Dict | None:
 def select_active_repos(non_fork_repos: List[Dict]) -> List[Dict]:
     ordered = sorted(non_fork_repos, key=lambda r: r.get("pushed_at") or "", reverse=True)
     selected: List[Dict] = []
-    selected_names = set()
-
-    for name in ACTIVE_PRIORITY:
-        repo = find_repo(ordered, name)
-        if repo and repo["name"] not in ACTIVE_EXCLUDE:
-            selected.append(repo)
-            selected_names.add(repo["name"])
 
     for repo in ordered:
         name = repo["name"]
         if len(selected) >= ACTIVE_LIMIT:
             break
-        if name in selected_names or name in ACTIVE_EXCLUDE or repo.get("archived"):
+        if name in ACTIVE_EXCLUDE or repo.get("archived"):
             continue
         selected.append(repo)
-        selected_names.add(name)
 
-    return selected[:ACTIVE_LIMIT]
+    return selected
 
 
 def select_representative_repos(non_fork_repos: List[Dict]) -> List[Dict]:
