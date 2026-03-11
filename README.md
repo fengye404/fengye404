@@ -28,16 +28,22 @@
 - Recent direction: agent tooling, MCP/Spring AI demos, LLM training practice
 - Public repos: `24` (data synced on `2026-03-11`)
 
-## Active Projects (2025-2026)
+## Active Projects (2023-2026)
 
 | Project | What it is | Stack | Last push |
 | --- | --- | --- | --- |
 | [TermPilot](https://github.com/fengye404/TermPilot) | Terminal-first remote control tool with relay, agent, and mobile web access | TypeScript | 2026-03 |
 | [llm-training-learning](https://github.com/fengye404/llm-training-learning) | End-to-end LLM training learning workspace (SFT / DPO / GRPO / RLHF) | Python, Jupyter | 2026-03 |
 | [muse-work](https://github.com/fengye404/muse-work) | Desktop AI workspace powered by Claude Agent SDK | Electron, React, TypeScript | 2026-03 |
-| [ADK-demo](https://github.com/fengye404/ADK-demo) | Java ADK experiment with simple agent runner | Java | 2025-12 |
-| [ts-ai-sdk-demo](https://github.com/fengye404/ts-ai-sdk-demo) | Minimal AI SDK usage demo in TypeScript | TypeScript | 2025-07 |
-| [spring-ai-demo](https://github.com/fengye404/spring-ai-demo) | Spring AI demo with chat flow and tool integration | Java, Spring AI | 2025-07 |
+| [palm-netlify-proxy](https://github.com/fengye404/palm-netlify-proxy) | No description yet | TypeScript | 2025-04 |
+| [Raft-KV-Java](https://github.com/fengye404/Raft-KV-Java) | Raft-based key/value database, async networking with Vert.x | Java, Vert.x, Raft | 2024-05 |
+| [Summer-bot-SpringCloud](https://github.com/fengye404/Summer-bot-SpringCloud) | 基于 Mirai 和 SpringCloud 的 QQ 机器人 | Java | 2023-05 |
+
+## Open Source Contributions
+
+| Project | Contribution | Links |
+| --- | --- | --- |
+| `alibaba/arthas` | Contributed via OSPP (low-resource gRPC implementation exploration), including PR #2914. | [Repo](https://github.com/alibaba/arthas) · [PR](https://github.com/alibaba/arthas/pull/2914) |
 
 ## Representative Repos
 
@@ -46,12 +52,6 @@
 | Raft-KV-Java | Raft-based key/value database, async networking with Vert.x (`18★`) | [Repo](https://github.com/fengye404/Raft-KV-Java) |
 | freshcup | Early backend project (`4★`, `2 forks`) | [Repo](https://github.com/fengye404/freshcup) |
 | SAST.2021-backendWoc | Backend workshop project (`1★`, `4 forks`) | [Repo](https://github.com/fengye404/SAST.2021-backendWoc) |
-
-## Open Source Contributions
-
-| Project | Contribution | Links |
-| --- | --- | --- |
-| `alibaba/arthas` | Contributed via OSPP (low-resource gRPC implementation exploration), including PR #2914. | [Repo](https://github.com/alibaba/arthas) · [PR](https://github.com/alibaba/arthas/pull/2914) |
 
 ## Tech I Use
 

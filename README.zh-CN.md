@@ -28,16 +28,22 @@
 - 近期重点：Agent 工具链、MCP/Spring AI 示例、LLM 训练实践
 - 公开仓库：`24`（数据同步于 `2026-03-11`）
 
-## 活跃项目（2025-2026）
+## 活跃项目（2023-2026）
 
 | 项目 | 项目说明 | 技术栈 | 最近提交 |
 | --- | --- | --- | --- |
 | [TermPilot](https://github.com/fengye404/TermPilot) | 终端优先的远程控制工具，包含 relay、agent 与移动端 Web 访问 | TypeScript | 2026-03 |
 | [llm-training-learning](https://github.com/fengye404/llm-training-learning) | 覆盖 SFT / DPO / GRPO / RLHF 的端到端 LLM 训练学习仓库 | Python, Jupyter | 2026-03 |
 | [muse-work](https://github.com/fengye404/muse-work) | 基于 Claude Agent SDK 的桌面 AI 工作台 | Electron, React, TypeScript | 2026-03 |
-| [ADK-demo](https://github.com/fengye404/ADK-demo) | Java ADK 实验仓库，包含基础 Agent Runner | Java | 2025-12 |
-| [ts-ai-sdk-demo](https://github.com/fengye404/ts-ai-sdk-demo) | TypeScript 版最小化 AI SDK 使用示例 | TypeScript | 2025-07 |
-| [spring-ai-demo](https://github.com/fengye404/spring-ai-demo) | Spring AI 示例，包含聊天流程与工具调用 | Java, Spring AI | 2025-07 |
+| [palm-netlify-proxy](https://github.com/fengye404/palm-netlify-proxy) | 暂无描述 | TypeScript | 2025-04 |
+| [Raft-KV-Java](https://github.com/fengye404/Raft-KV-Java) | 基于 Raft 的 Key/Value 数据库，采用 Vert.x 异步网络模型 | Java, Vert.x, Raft | 2024-05 |
+| [Summer-bot-SpringCloud](https://github.com/fengye404/Summer-bot-SpringCloud) | 基于 Mirai 和 SpringCloud 的 QQ 机器人 | Java | 2023-05 |
+
+## 开源贡献
+
+| 项目 | 贡献说明 | 链接 |
+| --- | --- | --- |
+| `alibaba/arthas` | 通过 OSPP 参与贡献（低资源消耗 gRPC 实现探索），包含 PR #2914。 | [仓库](https://github.com/alibaba/arthas) · [PR](https://github.com/alibaba/arthas/pull/2914) |
 
 ## 代表项目
 
@@ -46,12 +52,6 @@
 | Raft-KV-Java | 基于 Raft 的 Key/Value 数据库，采用 Vert.x 异步网络模型（`18★`） | [仓库](https://github.com/fengye404/Raft-KV-Java) |
 | freshcup | 早期后端实践项目（`4★`, `2 forks`） | [仓库](https://github.com/fengye404/freshcup) |
 | SAST.2021-backendWoc | 后端训练营项目（`1★`, `4 forks`） | [仓库](https://github.com/fengye404/SAST.2021-backendWoc) |
-
-## 开源贡献
-
-| 项目 | 贡献说明 | 链接 |
-| --- | --- | --- |
-| `alibaba/arthas` | 通过 OSPP 参与贡献（低资源消耗 gRPC 实现探索），包含 PR #2914。 | [仓库](https://github.com/alibaba/arthas) · [PR](https://github.com/alibaba/arthas/pull/2914) |
 
 ## 技术栈
 

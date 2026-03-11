@@ -149,6 +149,8 @@ def select_active_repos(non_fork_repos: List[Dict]) -> List[Dict]:
             break
         if name in ACTIVE_EXCLUDE or repo.get("archived"):
             continue
+        if "demo" in name.lower():
+            continue
         selected.append(repo)
 
     return selected
@@ -396,13 +398,13 @@ def build_readme_en(user: Dict, active: List[Dict], reps: List[Dict], stats: Dic
 
 {active_table_en(active)}
 
-## Representative Repos
-
-{rep_table_en(reps)}
-
 ## Open Source Contributions
 
 {oss_table_en()}
+
+## Representative Repos
+
+{rep_table_en(reps)}
 
 ## Tech I Use
 
@@ -479,13 +481,13 @@ def build_readme_zh(user: Dict, active: List[Dict], reps: List[Dict], stats: Dic
 
 {active_table_zh(active)}
 
-## 代表项目
-
-{rep_table_zh(reps)}
-
 ## 开源贡献
 
 {oss_table_zh()}
+
+## 代表项目
+
+{rep_table_zh(reps)}
 
 ## 技术栈
 
