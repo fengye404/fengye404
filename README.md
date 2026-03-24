@@ -28,16 +28,16 @@
 - Recent direction: agent tooling, MCP/Spring AI demos, LLM training practice
 - Public repos: `25` (data synced on `2026-03-24`)
 
-## Active Projects (2023-2026)
+## Active Projects (2024-2026)
 
 | Project | What it is | Stack | Last push |
 | --- | --- | --- | --- |
 | [TermPilot](https://github.com/fengye404/TermPilot) | Terminal-first remote control tool with relay, agent, and mobile web access | TypeScript | 2026-03 |
+| [nano-vllm](https://github.com/fengye404/nano-vllm) | Nano vLLM (fork) | Python | 2026-03 |
 | [llm-training-learning](https://github.com/fengye404/llm-training-learning) | End-to-end LLM training learning workspace (SFT / DPO / GRPO / RLHF) | Python, Jupyter | 2026-03 |
 | [muse-work](https://github.com/fengye404/muse-work) | Desktop AI workspace powered by Claude Agent SDK | Electron, React, TypeScript | 2026-03 |
 | [palm-netlify-proxy](https://github.com/fengye404/palm-netlify-proxy) | No description yet | TypeScript | 2025-04 |
 | [Raft-KV-Java](https://github.com/fengye404/Raft-KV-Java) | Raft-based key/value database, async networking with Vert.x | Java, Vert.x, Raft | 2024-05 |
-| [Summer-bot-SpringCloud](https://github.com/fengye404/Summer-bot-SpringCloud) | 基于 Mirai 和 SpringCloud 的 QQ 机器人 | Java | 2023-05 |
 
 ## Open Source Contributions
 

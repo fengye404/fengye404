@@ -18,6 +18,7 @@ PROFILE_NAME = os.getenv("PROFILE_NAME", "FengYe")
 
 ACTIVE_LIMIT = 6
 ACTIVE_EXCLUDE = {f"{USERNAME}", f"{USERNAME}.github.io", f"{USERNAME}.github.io-back"}
+RECENT_FORK_DAYS = 90
 
 REP_PRIORITY = ["Raft-KV-Java", "freshcup", "SAST.2021-backendWoc"]
 REP_LIMIT = 3
@@ -132,6 +133,17 @@ def sync_date() -> str:
     return datetime.now(ZoneInfo("Asia/Shanghai")).strftime("%Y-%m-%d")
 
 
+def is_recent_fork(repo: Dict) -> bool:
+    if not repo.get("fork"):
+        return True
+    pushed_at = repo.get("pushed_at")
+    if not pushed_at:
+        return False
+    pushed_dt = datetime.fromisoformat(pushed_at.replace("Z", "+00:00"))
+    now = datetime.now(ZoneInfo("UTC"))
+    return (now - pushed_dt).days <= RECENT_FORK_DAYS
+
+
 def find_repo(repos: List[Dict], name: str) -> Dict | None:
     for repo in repos:
         if repo["name"] == name:
@@ -139,8 +151,8 @@ def find_repo(repos: List[Dict], name: str) -> Dict | None:
     return None
 
 
-def select_active_repos(non_fork_repos: List[Dict]) -> List[Dict]:
-    ordered = sorted(non_fork_repos, key=lambda r: r.get("pushed_at") or "", reverse=True)
+def select_active_repos(repos: List[Dict]) -> List[Dict]:
+    ordered = sorted(repos, key=lambda r: r.get("pushed_at") or "", reverse=True)
     selected: List[Dict] = []
 
     for repo in ordered:
@@ -150,6 +162,8 @@ def select_active_repos(non_fork_repos: List[Dict]) -> List[Dict]:
         if name in ACTIVE_EXCLUDE or repo.get("archived"):
             continue
         if "demo" in name.lower():
+            continue
+        if not is_recent_fork(repo):
             continue
         selected.append(repo)
 
@@ -217,6 +231,24 @@ def compute_profile_stats(user: Dict, non_fork_repos: List[Dict]) -> Dict:
     }
 
 
+def active_desc_en(repo: Dict) -> str:
+    name = repo["name"]
+    meta = PROJECT_META.get(name, {})
+    desc = meta.get("en_desc") or repo.get("description") or "No description yet"
+    if repo.get("fork"):
+        return f"{desc} (fork)"
+    return desc
+
+
+def active_desc_zh(repo: Dict) -> str:
+    name = repo["name"]
+    meta = PROJECT_META.get(name, {})
+    desc = meta.get("zh_desc") or repo.get("description") or "暂无描述"
+    if repo.get("fork"):
+        return f"{desc}（fork）"
+    return desc
+
+
 def active_table_en(active_repos: List[Dict]) -> str:
     lines = [
         "| Project | What it is | Stack | Last push |",
@@ -225,7 +257,7 @@ def active_table_en(active_repos: List[Dict]) -> str:
     for repo in active_repos:
         name = repo["name"]
         meta = PROJECT_META.get(name, {})
-        desc = meta.get("en_desc") or repo.get("description") or "No description yet"
+        desc = active_desc_en(repo)
         stack = meta.get("stack") or repo.get("language") or "-"
         lines.append(
             f"| [{name}](https://github.com/{USERNAME}/{name}) | {desc} | {stack} | {to_ym(repo.get('pushed_at'))} |"
@@ -241,7 +273,7 @@ def active_table_zh(active_repos: List[Dict]) -> str:
     for repo in active_repos:
         name = repo["name"]
         meta = PROJECT_META.get(name, {})
-        desc = meta.get("zh_desc") or repo.get("description") or "暂无描述"
+        desc = active_desc_zh(repo)
         stack = meta.get("stack") or repo.get("language") or "-"
         lines.append(
             f"| [{name}](https://github.com/{USERNAME}/{name}) | {desc} | {stack} | {to_ym(repo.get('pushed_at'))} |"
@@ -528,7 +560,7 @@ def main() -> None:
     repos = fetch_repos()
 
     non_fork_repos = [repo for repo in repos if not repo.get("fork")]
-    active = select_active_repos(non_fork_repos)
+    active = select_active_repos(repos)
     reps = select_representative_repos(non_fork_repos)
     stats = compute_profile_stats(user, non_fork_repos)
 
