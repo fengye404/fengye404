@@ -26,14 +26,14 @@
 - `@Alibaba` Java / 后端工程师
 - 关注方向：分布式系统与 AI 应用工程
 - 近期重点：Agent 工具链、MCP/Spring AI 示例、LLM 训练实践
-- 公开仓库：`25`（数据同步于 `2026-03-25`）
+- 公开仓库：`25`（数据同步于 `2026-03-26`）
 
 ## 活跃项目（2024-2026）
 
 | 项目 | 项目说明 | 技术栈 | 最近提交 |
 | --- | --- | --- | --- |
-| [TermPilot](https://github.com/fengye404/TermPilot) | 终端优先的远程控制工具，包含 relay、agent 与移动端 Web 访问 | TypeScript | 2026-03 |
 | [nano-vllm](https://github.com/fengye404/nano-vllm) | Nano vLLM（fork） | Python | 2026-03 |
+| [TermPilot](https://github.com/fengye404/TermPilot) | 终端优先的远程控制工具，包含 relay、agent 与移动端 Web 访问 | TypeScript | 2026-03 |
 | [llm-training-learning](https://github.com/fengye404/llm-training-learning) | 覆盖 SFT / DPO / GRPO / RLHF 的端到端 LLM 训练学习仓库 | Python, Jupyter | 2026-03 |
 | [muse-work](https://github.com/fengye404/muse-work) | 基于 Claude Agent SDK 的桌面 AI 工作台 | Electron, React, TypeScript | 2026-03 |
 | [palm-netlify-proxy](https://github.com/fengye404/palm-netlify-proxy) | 暂无描述 | TypeScript | 2025-04 |
@@ -72,7 +72,7 @@
 | --- | --- |
 | 公开仓库数 | `25` |
 | Followers / Following | `13` / `7` |
-| 自有仓库总 Stars | `31` |
+| 自有仓库总 Stars | `32` |
 | 自有仓库总 Forks | `6` |
 | 主要语言 | `Java, TypeScript, Python, JavaScript, HTML` |
 
