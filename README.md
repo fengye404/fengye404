@@ -26,18 +26,18 @@
 - `@Alibaba` Java / Backend engineer
 - Focus on distributed systems and AI application engineering
 - Recent direction: agent tooling, MCP/Spring AI demos, LLM training practice
-- Public repos: `27` (data synced on `2026-03-31`)
+- Public repos: `28` (data synced on `2026-04-01`)
 
 ## Active Projects (2026)
 
 | Project | What it is | Stack | Last push |
 | --- | --- | --- | --- |
+| [claude-code](https://github.com/fengye404/claude-code) | Claude Code v2.1.88 TypeScript source (extracted from npm source map) | TypeScript | 2026-03 |
 | [Claude-Code-TS](https://github.com/fengye404/Claude-Code-TS) | A personal implementation of a TypeScript version of Claude Code (reverse-engineered from Claude Code) | TypeScript | 2026-03 |
 | [fengye-skills](https://github.com/fengye404/fengye-skills) | 个人 Copilot Agent Skills 集合 | HTML | 2026-03 |
 | [nano-vllm](https://github.com/fengye404/nano-vllm) | Nano vLLM (fork) | Python | 2026-03 |
 | [TermPilot](https://github.com/fengye404/TermPilot) | Terminal-first remote control tool with relay, agent, and mobile web access | TypeScript | 2026-03 |
 | [llm-training-learning](https://github.com/fengye404/llm-training-learning) | End-to-end LLM training learning workspace (SFT / DPO / GRPO / RLHF) | Python, Jupyter | 2026-03 |
-| [muse-work](https://github.com/fengye404/muse-work) | Desktop AI workspace powered by Claude Agent SDK | Electron, React, TypeScript | 2026-03 |
 
 ## Open Source Contributions
 
@@ -70,7 +70,7 @@
 
 | Metric | Value |
 | --- | --- |
-| Public repos | `27` |
+| Public repos | `28` |
 | Followers / Following | `13` / `8` |
 | Total stars (owned repos) | `33` |
 | Total forks (owned repos) | `6` |
