@@ -26,18 +26,18 @@
 - `@Alibaba` Java / 后端工程师
 - 关注方向：分布式系统与 AI 应用工程
 - 近期重点：Agent 工具链、MCP/Spring AI 示例、LLM 训练实践
-- 公开仓库：`28`（数据同步于 `2026-04-08`）
+- 公开仓库：`29`（数据同步于 `2026-04-09`）
 
 ## 活跃项目（2026）
 
 | 项目 | 项目说明 | 技术栈 | 最近提交 |
 | --- | --- | --- | --- |
+| [claude-code-java](https://github.com/fengye404/claude-code-java) | Enterprise-grade Java implementation of Claude Code - Cloud-native AI coding agent powered by Spring Boot 3.3 + Spring AI 1.1 | Java | 2026-04 |
 | [claude-code](https://github.com/fengye404/claude-code) | Claude Code v2.1.88 TypeScript source (extracted from npm source map) | TypeScript | 2026-03 |
 | [Claude-Code-TS](https://github.com/fengye404/Claude-Code-TS) | A personal implementation of a TypeScript version of Claude Code (reverse-engineered from Claude Code) | TypeScript | 2026-03 |
 | [fengye-skills](https://github.com/fengye404/fengye-skills) | 个人 Copilot Agent Skills 集合 | HTML | 2026-03 |
 | [nano-vllm](https://github.com/fengye404/nano-vllm) | Nano vLLM（fork） | Python | 2026-03 |
 | [TermPilot](https://github.com/fengye404/TermPilot) | 终端优先的远程控制工具，包含 relay、agent 与移动端 Web 访问 | TypeScript | 2026-03 |
-| [llm-training-learning](https://github.com/fengye404/llm-training-learning) | 覆盖 SFT / DPO / GRPO / RLHF 的端到端 LLM 训练学习仓库 | Python, Jupyter | 2026-03 |
 
 ## 开源贡献
 
@@ -70,7 +70,7 @@
 
 | 指标 | 数值 |
 | --- | --- |
-| 公开仓库数 | `28` |
+| 公开仓库数 | `29` |
 | Followers / Following | `13` / `8` |
 | 自有仓库总 Stars | `33` |
 | 自有仓库总 Forks | `6` |
