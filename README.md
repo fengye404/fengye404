@@ -26,16 +26,16 @@
 - `@Alibaba` Java / Backend engineer
 - Focus on distributed systems and AI application engineering
 - Recent direction: agent tooling, MCP/Spring AI demos, LLM training practice
-- Public repos: `29` (data synced on `2026-04-09`)
+- Public repos: `29` (data synced on `2026-04-10`)
 
 ## Active Projects (2026)
 
 | Project | What it is | Stack | Last push |
 | --- | --- | --- | --- |
+| [fengye-skills](https://github.com/fengye404/fengye-skills) | 个人 Copilot Agent Skills 集合 | Python | 2026-04 |
 | [claude-code-java](https://github.com/fengye404/claude-code-java) | Enterprise-grade Java implementation of Claude Code - Cloud-native AI coding agent powered by Spring Boot 3.3 + Spring AI 1.1 | Java | 2026-04 |
 | [claude-code](https://github.com/fengye404/claude-code) | Claude Code v2.1.88 TypeScript source (extracted from npm source map) | TypeScript | 2026-03 |
 | [Claude-Code-TS](https://github.com/fengye404/Claude-Code-TS) | A personal implementation of a TypeScript version of Claude Code (reverse-engineered from Claude Code) | TypeScript | 2026-03 |
-| [fengye-skills](https://github.com/fengye404/fengye-skills) | 个人 Copilot Agent Skills 集合 | HTML | 2026-03 |
 | [nano-vllm](https://github.com/fengye404/nano-vllm) | Nano vLLM (fork) | Python | 2026-03 |
 | [TermPilot](https://github.com/fengye404/TermPilot) | Terminal-first remote control tool with relay, agent, and mobile web access | TypeScript | 2026-03 |
 
@@ -72,7 +72,7 @@
 | --- | --- |
 | Public repos | `29` |
 | Followers / Following | `13` / `8` |
-| Total stars (owned repos) | `33` |
+| Total stars (owned repos) | `34` |
 | Total forks (owned repos) | `6` |
 | Top languages | `Java, TypeScript, Python, JavaScript, HTML` |
 
