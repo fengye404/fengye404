@@ -26,18 +26,18 @@
 - `@Alibaba` Java / 后端工程师
 - 关注方向：分布式系统与 AI 应用工程
 - 近期重点：Agent 工具链、MCP/Spring AI 示例、LLM 训练实践
-- 公开仓库：`29`（数据同步于 `2026-04-11`）
+- 公开仓库：`29`（数据同步于 `2026-04-12`）
 
 ## 活跃项目（2026）
 
 | 项目 | 项目说明 | 技术栈 | 最近提交 |
 | --- | --- | --- | --- |
+| [blog](https://github.com/fengye404/blog) | my personal hexo blog | JavaScript | 2026-04 |
 | [fengye-skills](https://github.com/fengye404/fengye-skills) | 个人 Copilot Agent Skills 集合 | Python | 2026-04 |
 | [claude-code-java](https://github.com/fengye404/claude-code-java) | Enterprise-grade Java implementation of Claude Code - Cloud-native AI coding agent powered by Spring Boot 3.3 + Spring AI 1.1 | Java | 2026-04 |
 | [claude-code](https://github.com/fengye404/claude-code) | Claude Code v2.1.88 TypeScript source (extracted from npm source map) | TypeScript | 2026-03 |
 | [Claude-Code-TS](https://github.com/fengye404/Claude-Code-TS) | A personal implementation of a TypeScript version of Claude Code (reverse-engineered from Claude Code) | TypeScript | 2026-03 |
 | [nano-vllm](https://github.com/fengye404/nano-vllm) | Nano vLLM（fork） | Python | 2026-03 |
-| [TermPilot](https://github.com/fengye404/TermPilot) | 终端优先的远程控制工具，包含 relay、agent 与移动端 Web 访问 | TypeScript | 2026-03 |
 
 ## 开源贡献
 
