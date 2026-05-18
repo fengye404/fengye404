@@ -26,13 +26,13 @@
 - `@Alibaba` Java / 后端工程师
 - 关注方向：分布式系统与 AI 应用工程
 - 近期重点：Agent 工具链、MCP/Spring AI 示例、LLM 训练实践
-- 公开仓库：`30`（数据同步于 `2026-05-18`）
+- 公开仓库：`30`（数据同步于 `2026-05-19`）
 
 ## 活跃项目（2026）
 
 | 项目 | 项目说明 | 技术栈 | 最近提交 |
 | --- | --- | --- | --- |
-| [antimatter-dimensions-chinese](https://github.com/fengye404/antimatter-dimensions-chinese) | Antimatter Dimensions（fork） | JavaScript | 2026-05 |
+| [antimatter-dimensions-chinese](https://github.com/fengye404/antimatter-dimensions-chinese) | 暂无描述（fork） | JavaScript | 2026-05 |
 | [fengye-skills](https://github.com/fengye404/fengye-skills) | 个人 Copilot Agent Skills 集合 | Python | 2026-04 |
 | [blog](https://github.com/fengye404/blog) | my personal hexo blog | JavaScript | 2026-04 |
 | [claude-code-java](https://github.com/fengye404/claude-code-java) | Enterprise-grade Java implementation of Claude Code - Cloud-native AI coding agent powered by Spring Boot 3.3 + Spring AI 1.1 | Java | 2026-04 |
