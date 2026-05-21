@@ -26,18 +26,18 @@
 - `@Alibaba` Java / 后端工程师
 - 关注方向：分布式系统与 AI 应用工程
 - 近期重点：Agent 工具链、MCP/Spring AI 示例、LLM 训练实践
-- 公开仓库：`30`（数据同步于 `2026-05-21`）
+- 公开仓库：`31`（数据同步于 `2026-05-22`）
 
 ## 活跃项目（2026）
 
 | 项目 | 项目说明 | 技术栈 | 最近提交 |
 | --- | --- | --- | --- |
 | [antimatter-dimensions-chinese](https://github.com/fengye404/antimatter-dimensions-chinese) | 暂无描述（fork） | JavaScript | 2026-05 |
+| [CodeIsland](https://github.com/fengye404/CodeIsland) | 暂无描述（fork） | - | 2026-05 |
 | [fengye-skills](https://github.com/fengye404/fengye-skills) | 个人 Copilot Agent Skills 集合 | Python | 2026-04 |
 | [blog](https://github.com/fengye404/blog) | my personal hexo blog | JavaScript | 2026-04 |
 | [claude-code-java](https://github.com/fengye404/claude-code-java) | Enterprise-grade Java implementation of Claude Code - Cloud-native AI coding agent powered by Spring Boot 3.3 + Spring AI 1.1 | Java | 2026-04 |
 | [claude-code](https://github.com/fengye404/claude-code) | Claude Code v2.1.88 TypeScript source (extracted from npm source map) | TypeScript | 2026-03 |
-| [Claude-Code-TS](https://github.com/fengye404/Claude-Code-TS) | A personal implementation of a TypeScript version of Claude Code (reverse-engineered from Claude Code) | TypeScript | 2026-03 |
 
 ## 开源贡献
 
@@ -70,7 +70,7 @@
 
 | 指标 | 数值 |
 | --- | --- |
-| 公开仓库数 | `30` |
+| 公开仓库数 | `31` |
 | Followers / Following | `13` / `8` |
 | 自有仓库总 Stars | `34` |
 | 自有仓库总 Forks | `6` |
