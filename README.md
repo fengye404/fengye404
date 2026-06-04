@@ -26,16 +26,16 @@
 - `@Alibaba` Java / Backend engineer
 - Focus on distributed systems and AI application engineering
 - Recent direction: agent tooling, MCP/Spring AI demos, LLM training practice
-- Public repos: `32` (data synced on `2026-06-04`)
+- Public repos: `32` (data synced on `2026-06-05`)
 
 ## Active Projects (2026)
 
 | Project | What it is | Stack | Last push |
 | --- | --- | --- | --- |
+| [CodeIsland](https://github.com/fengye404/CodeIsland) | No description yet (fork) | - | 2026-06 |
 | [hermes-agent](https://github.com/fengye404/hermes-agent) | The agent that grows with you (fork) | - | 2026-06 |
 | [antimatter-dimensions-chinese](https://github.com/fengye404/antimatter-dimensions-chinese) | No description yet (fork) | JavaScript | 2026-05 |
 | [blog](https://github.com/fengye404/blog) | my personal hexo blog | JavaScript | 2026-05 |
-| [CodeIsland](https://github.com/fengye404/CodeIsland) | No description yet (fork) | - | 2026-05 |
 | [fengye-skills](https://github.com/fengye404/fengye-skills) | 个人 Copilot Agent Skills 集合 | Python | 2026-04 |
 | [claude-code-java](https://github.com/fengye404/claude-code-java) | Enterprise-grade Java implementation of Claude Code - Cloud-native AI coding agent powered by Spring Boot 3.3 + Spring AI 1.1 | Java | 2026-04 |
 
