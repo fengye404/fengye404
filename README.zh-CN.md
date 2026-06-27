@@ -26,23 +26,24 @@
 - `@Alibaba` Java / 后端工程师
 - 关注方向：分布式系统与 AI 应用工程
 - 近期重点：Agent 工具链、MCP/Spring AI 示例、LLM 训练实践
-- 公开仓库：`32`（数据同步于 `2026-06-27`）
+- 公开仓库：`32`（数据同步于 `2026-06-28`）
 
 ## 活跃项目（2026）
 
 | 项目 | 项目说明 | 技术栈 | 最近提交 |
 | --- | --- | --- | --- |
-| [CodeIsland](https://github.com/fengye404/CodeIsland) | 暂无描述（fork） | - | 2026-06 |
-| [hermes-agent](https://github.com/fengye404/hermes-agent) | The agent that grows with you（fork） | - | 2026-06 |
-| [antimatter-dimensions-chinese](https://github.com/fengye404/antimatter-dimensions-chinese) | 暂无描述（fork） | JavaScript | 2026-05 |
-| [blog](https://github.com/fengye404/blog) | my personal hexo blog | JavaScript | 2026-05 |
+| [blog](https://github.com/fengye404/blog) | 个人技术博客与写作归档 | JavaScript, Hexo | 2026-05 |
 | [fengye-skills](https://github.com/fengye404/fengye-skills) | 个人 Copilot Agent Skills 集合 | Python | 2026-04 |
-| [claude-code-java](https://github.com/fengye404/claude-code-java) | Enterprise-grade Java implementation of Claude Code - Cloud-native AI coding agent powered by Spring Boot 3.3 + Spring AI 1.1 | Java | 2026-04 |
+| [claude-code-java](https://github.com/fengye404/claude-code-java) | Claude Code 风格 Agent 工作流的 Java 实现 | Java, Spring Boot, Spring AI | 2026-04 |
+| [claude-code](https://github.com/fengye404/claude-code) | Claude Code TypeScript 源码阅读与探索仓库 | TypeScript | 2026-03 |
+| [Claude-Code-TS](https://github.com/fengye404/Claude-Code-TS) | 受 Claude Code 启发的个人 TypeScript 实现实验 | TypeScript | 2026-03 |
+| [TermPilot](https://github.com/fengye404/TermPilot) | 终端优先的远程控制工具，包含 relay、agent 与移动端 Web 访问 | TypeScript | 2026-03 |
 
 ## 开源贡献
 
 | 项目 | 贡献说明 | 链接 |
 | --- | --- | --- |
+| `wxtsky/CodeIsland` | 已合并 PR #218：新增 iPhone Buddy app 与手表同步支持。 | [仓库](https://github.com/wxtsky/CodeIsland) · [PR](https://github.com/wxtsky/CodeIsland/pull/218) |
 | `alibaba/arthas` | 通过 OSPP 参与贡献（低资源消耗 gRPC 实现探索），包含 PR #2914。 | [仓库](https://github.com/alibaba/arthas) · [PR](https://github.com/alibaba/arthas/pull/2914) |
 
 ## 代表项目

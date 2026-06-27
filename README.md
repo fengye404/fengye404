@@ -26,23 +26,24 @@
 - `@Alibaba` Java / Backend engineer
 - Focus on distributed systems and AI application engineering
 - Recent direction: agent tooling, MCP/Spring AI demos, LLM training practice
-- Public repos: `32` (data synced on `2026-06-27`)
+- Public repos: `32` (data synced on `2026-06-28`)
 
 ## Active Projects (2026)
 
 | Project | What it is | Stack | Last push |
 | --- | --- | --- | --- |
-| [CodeIsland](https://github.com/fengye404/CodeIsland) | No description yet (fork) | - | 2026-06 |
-| [hermes-agent](https://github.com/fengye404/hermes-agent) | The agent that grows with you (fork) | - | 2026-06 |
-| [antimatter-dimensions-chinese](https://github.com/fengye404/antimatter-dimensions-chinese) | No description yet (fork) | JavaScript | 2026-05 |
-| [blog](https://github.com/fengye404/blog) | my personal hexo blog | JavaScript | 2026-05 |
-| [fengye-skills](https://github.com/fengye404/fengye-skills) | 个人 Copilot Agent Skills 集合 | Python | 2026-04 |
-| [claude-code-java](https://github.com/fengye404/claude-code-java) | Enterprise-grade Java implementation of Claude Code - Cloud-native AI coding agent powered by Spring Boot 3.3 + Spring AI 1.1 | Java | 2026-04 |
+| [blog](https://github.com/fengye404/blog) | Personal technical blog and writing archive | JavaScript, Hexo | 2026-05 |
+| [fengye-skills](https://github.com/fengye404/fengye-skills) | Personal Copilot Agent Skills collection | Python | 2026-04 |
+| [claude-code-java](https://github.com/fengye404/claude-code-java) | Java implementation of Claude Code-style agent workflows | Java, Spring Boot, Spring AI | 2026-04 |
+| [claude-code](https://github.com/fengye404/claude-code) | Readable TypeScript source exploration of Claude Code | TypeScript | 2026-03 |
+| [Claude-Code-TS](https://github.com/fengye404/Claude-Code-TS) | Personal TypeScript implementation experiment inspired by Claude Code | TypeScript | 2026-03 |
+| [TermPilot](https://github.com/fengye404/TermPilot) | Terminal-first remote control tool with relay, agent, and mobile web access | TypeScript | 2026-03 |
 
 ## Open Source Contributions
 
 | Project | Contribution | Links |
 | --- | --- | --- |
+| `wxtsky/CodeIsland` | Merged PR #218: added iPhone Buddy app and watch sync support. | [Repo](https://github.com/wxtsky/CodeIsland) · [PR](https://github.com/wxtsky/CodeIsland/pull/218) |
 | `alibaba/arthas` | Contributed via OSPP (low-resource gRPC implementation exploration), including PR #2914. | [Repo](https://github.com/alibaba/arthas) · [PR](https://github.com/alibaba/arthas/pull/2914) |
 
 ## Representative Repos

@@ -18,12 +18,36 @@ PROFILE_NAME = os.getenv("PROFILE_NAME", "FengYe")
 
 ACTIVE_LIMIT = 6
 ACTIVE_EXCLUDE = {f"{USERNAME}", f"{USERNAME}.github.io", f"{USERNAME}.github.io-back"}
-RECENT_FORK_DAYS = 90
 
 REP_PRIORITY = ["Raft-KV-Java", "freshcup", "SAST.2021-backendWoc"]
 REP_LIMIT = 3
 
 PROJECT_META = {
+    "blog": {
+        "stack": "JavaScript, Hexo",
+        "en_desc": "Personal technical blog and writing archive",
+        "zh_desc": "个人技术博客与写作归档",
+    },
+    "fengye-skills": {
+        "stack": "Python",
+        "en_desc": "Personal Copilot Agent Skills collection",
+        "zh_desc": "个人 Copilot Agent Skills 集合",
+    },
+    "claude-code-java": {
+        "stack": "Java, Spring Boot, Spring AI",
+        "en_desc": "Java implementation of Claude Code-style agent workflows",
+        "zh_desc": "Claude Code 风格 Agent 工作流的 Java 实现",
+    },
+    "claude-code": {
+        "stack": "TypeScript",
+        "en_desc": "Readable TypeScript source exploration of Claude Code",
+        "zh_desc": "Claude Code TypeScript 源码阅读与探索仓库",
+    },
+    "Claude-Code-TS": {
+        "stack": "TypeScript",
+        "en_desc": "Personal TypeScript implementation experiment inspired by Claude Code",
+        "zh_desc": "受 Claude Code 启发的个人 TypeScript 实现实验",
+    },
     "muse-work": {
         "stack": "Electron, React, TypeScript",
         "en_desc": "Desktop AI workspace powered by Claude Agent SDK",
@@ -77,6 +101,13 @@ PROJECT_META = {
 }
 
 OPEN_SOURCE_CONTRIBUTIONS = [
+    {
+        "project": "wxtsky/CodeIsland",
+        "en_context": "Merged PR #218: added iPhone Buddy app and watch sync support.",
+        "zh_context": "已合并 PR #218：新增 iPhone Buddy app 与手表同步支持。",
+        "repo_url": "https://github.com/wxtsky/CodeIsland",
+        "pr_url": "https://github.com/wxtsky/CodeIsland/pull/218",
+    },
     {
         "project": "alibaba/arthas",
         "en_context": "Contributed via OSPP (low-resource gRPC implementation exploration), including PR #2914.",
@@ -133,17 +164,6 @@ def sync_date() -> str:
     return datetime.now(ZoneInfo("Asia/Shanghai")).strftime("%Y-%m-%d")
 
 
-def is_recent_fork(repo: Dict) -> bool:
-    if not repo.get("fork"):
-        return True
-    pushed_at = repo.get("pushed_at")
-    if not pushed_at:
-        return False
-    pushed_dt = datetime.fromisoformat(pushed_at.replace("Z", "+00:00"))
-    now = datetime.now(ZoneInfo("UTC"))
-    return (now - pushed_dt).days <= RECENT_FORK_DAYS
-
-
 def find_repo(repos: List[Dict], name: str) -> Dict | None:
     for repo in repos:
         if repo["name"] == name:
@@ -163,7 +183,7 @@ def select_active_repos(repos: List[Dict]) -> List[Dict]:
             continue
         if "demo" in name.lower():
             continue
-        if not is_recent_fork(repo):
+        if repo.get("fork"):
             continue
         selected.append(repo)
 
@@ -234,19 +254,13 @@ def compute_profile_stats(user: Dict, non_fork_repos: List[Dict]) -> Dict:
 def active_desc_en(repo: Dict) -> str:
     name = repo["name"]
     meta = PROJECT_META.get(name, {})
-    desc = meta.get("en_desc") or repo.get("description") or "No description yet"
-    if repo.get("fork"):
-        return f"{desc} (fork)"
-    return desc
+    return meta.get("en_desc") or repo.get("description") or "No description yet"
 
 
 def active_desc_zh(repo: Dict) -> str:
     name = repo["name"]
     meta = PROJECT_META.get(name, {})
-    desc = meta.get("zh_desc") or repo.get("description") or "暂无描述"
-    if repo.get("fork"):
-        return f"{desc}（fork）"
-    return desc
+    return meta.get("zh_desc") or repo.get("description") or "暂无描述"
 
 
 def active_table_en(active_repos: List[Dict]) -> str:
