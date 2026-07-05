@@ -26,7 +26,7 @@
 - `@Alibaba` Java / Backend engineer
 - Focus on distributed systems and AI application engineering
 - Recent direction: agent tooling, MCP/Spring AI demos, LLM training practice
-- Public repos: `33` (data synced on `2026-07-05`)
+- Public repos: `33` (data synced on `2026-07-06`)
 
 ## Active Projects (2026)
 
@@ -50,7 +50,7 @@
 
 | Project | Highlights | Link |
 | --- | --- | --- |
-| Raft-KV-Java | Raft-based key/value database, async networking with Vert.x (`18★`) | [Repo](https://github.com/fengye404/Raft-KV-Java) |
+| Raft-KV-Java | Raft-based key/value database, async networking with Vert.x (`19★`) | [Repo](https://github.com/fengye404/Raft-KV-Java) |
 | freshcup | Early backend project (`4★`, `2 forks`) | [Repo](https://github.com/fengye404/freshcup) |
 | SAST.2021-backendWoc | Backend workshop project (`1★`, `4 forks`) | [Repo](https://github.com/fengye404/SAST.2021-backendWoc) |
 
@@ -72,8 +72,8 @@
 | Metric | Value |
 | --- | --- |
 | Public repos | `33` |
-| Followers / Following | `15` / `13` |
-| Total stars (owned repos) | `35` |
+| Followers / Following | `16` / `13` |
+| Total stars (owned repos) | `36` |
 | Total forks (owned repos) | `6` |
 | Top languages | `Java, TypeScript, Python, JavaScript, Jupyter Notebook` |
 
