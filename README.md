@@ -26,7 +26,7 @@
 - `@Alibaba` Java / Backend engineer
 - Focus on distributed systems and AI application engineering
 - Recent direction: agent tooling, MCP/Spring AI demos, LLM training practice
-- Public repos: `34` (data synced on `2026-07-20`)
+- Public repos: `34` (data synced on `2026-07-21`)
 
 ## Active Projects (2026)
 
