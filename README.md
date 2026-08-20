@@ -26,14 +26,14 @@
 - `@Alibaba` Java / Backend engineer
 - Focus on distributed systems and AI application engineering
 - Recent direction: agent tooling, MCP/Spring AI demos, LLM training practice
-- Public repos: `35` (data synced on `2026-08-20`)
+- Public repos: `35` (data synced on `2026-08-21`)
 
 ## Active Projects (2026)
 
 | Project | What it is | Stack | Last push |
 | --- | --- | --- | --- |
-| [fengye-skills](https://github.com/fengye404/fengye-skills) | Personal Copilot Agent Skills collection | Python | 2026-08 |
 | [cs336-assignment](https://github.com/fengye404/cs336-assignment) | No description yet | Python | 2026-08 |
+| [fengye-skills](https://github.com/fengye404/fengye-skills) | Personal Copilot Agent Skills collection | Python | 2026-08 |
 | [cs336-study](https://github.com/fengye404/cs336-study) | No description yet | Jupyter Notebook | 2026-07 |
 | [blog](https://github.com/fengye404/blog) | Personal technical blog and writing archive | JavaScript, Hexo | 2026-05 |
 | [claude-code-java](https://github.com/fengye404/claude-code-java) | Java implementation of Claude Code-style agent workflows | Java, Spring Boot, Spring AI | 2026-04 |
