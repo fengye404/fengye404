@@ -26,15 +26,15 @@
 - `@Alibaba` Java / 后端工程师
 - 关注方向：分布式系统与 AI 应用工程
 - 近期重点：Agent 工具链、MCP/Spring AI 示例、LLM 训练实践
-- 公开仓库：`35`（数据同步于 `2026-10-11`）
+- 公开仓库：`36`（数据同步于 `2026-10-12`）
 
 ## 活跃项目（2026）
 
 | 项目 | 项目说明 | 技术栈 | 最近提交 |
 | --- | --- | --- | --- |
 | [blog](https://github.com/fengye404/blog) | 个人技术博客与写作归档 | JavaScript, Hexo | 2026-10 |
+| [fengye-skills](https://github.com/fengye404/fengye-skills) | 个人 Copilot Agent Skills 集合 | Python | 2026-10 |
 | [cs336-assignment](https://github.com/fengye404/cs336-assignment) | 暂无描述 | Python | 2026-09 |
-| [fengye-skills](https://github.com/fengye404/fengye-skills) | 个人 Copilot Agent Skills 集合 | Python | 2026-09 |
 | [cs336-study](https://github.com/fengye404/cs336-study) | 暂无描述 | Jupyter Notebook | 2026-07 |
 | [claude-code-java](https://github.com/fengye404/claude-code-java) | Claude Code 风格 Agent 工作流的 Java 实现 | Java, Spring Boot, Spring AI | 2026-04 |
 | [claude-code](https://github.com/fengye404/claude-code) | Claude Code TypeScript 源码阅读与探索仓库 | TypeScript | 2026-03 |
@@ -71,11 +71,11 @@
 
 | 指标 | 数值 |
 | --- | --- |
-| 公开仓库数 | `35` |
+| 公开仓库数 | `36` |
 | Followers / Following | `19` / `13` |
 | 自有仓库总 Stars | `36` |
 | 自有仓库总 Forks | `6` |
-| 主要语言 | `Java, TypeScript, Python, JavaScript, Jupyter Notebook` |
+| 主要语言 | `Java, TypeScript, Python, JavaScript, HTML` |
 
 ## 当前关注
 
