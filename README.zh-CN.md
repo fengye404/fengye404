@@ -26,7 +26,7 @@
 - `@Alibaba` Java / 后端工程师
 - 关注方向：分布式系统与 AI 应用工程
 - 近期重点：Agent 工具链、MCP/Spring AI 示例、LLM 训练实践
-- 公开仓库：`36`（数据同步于 `2026-10-17`）
+- 公开仓库：`36`（数据同步于 `2026-10-18`）
 
 ## 活跃项目（2026）
 
@@ -72,7 +72,7 @@
 | 指标 | 数值 |
 | --- | --- |
 | 公开仓库数 | `36` |
-| Followers / Following | `19` / `13` |
+| Followers / Following | `20` / `13` |
 | 自有仓库总 Stars | `37` |
 | 自有仓库总 Forks | `6` |
 | 主要语言 | `Java, TypeScript, Python, JavaScript, HTML` |
