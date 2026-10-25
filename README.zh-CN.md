@@ -26,7 +26,7 @@
 - `@Alibaba` Java / 后端工程师
 - 关注方向：分布式系统与 AI 应用工程
 - 近期重点：Agent 工具链、MCP/Spring AI 示例、LLM 训练实践
-- 公开仓库：`36`（数据同步于 `2026-10-25`）
+- 公开仓库：`36`（数据同步于 `2026-10-26`）
 
 ## 活跃项目（2026）
 
@@ -50,7 +50,7 @@
 
 | 项目 | 亮点 | 链接 |
 | --- | --- | --- |
-| Raft-KV-Java | 基于 Raft 的 Key/Value 数据库，采用 Vert.x 异步网络模型（`19★`） | [仓库](https://github.com/fengye404/Raft-KV-Java) |
+| Raft-KV-Java | 基于 Raft 的 Key/Value 数据库，采用 Vert.x 异步网络模型（`20★`） | [仓库](https://github.com/fengye404/Raft-KV-Java) |
 | freshcup | 早期后端实践项目（`4★`, `2 forks`） | [仓库](https://github.com/fengye404/freshcup) |
 | SAST.2021-backendWoc | 后端训练营项目（`1★`, `4 forks`） | [仓库](https://github.com/fengye404/SAST.2021-backendWoc) |
 
@@ -73,7 +73,7 @@
 | --- | --- |
 | 公开仓库数 | `36` |
 | Followers / Following | `20` / `13` |
-| 自有仓库总 Stars | `37` |
+| 自有仓库总 Stars | `38` |
 | 自有仓库总 Forks | `6` |
 | 主要语言 | `Java, TypeScript, Python, JavaScript, HTML` |
 
